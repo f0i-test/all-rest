@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All REST</title>
+  </head>
+  <body>
+    <h1>All REST</h1>
+    <div>
+      Simple server to accept and store al kinds of objects send via RESTful interface.  At the moment only JSON strings will be returned from the server.
+    </div>
+    <a href="allrest/">List and edit objects</a><br/>
+    <h2>Features</h2>
+    <ul>
+      <li>Find     :   GET      /thing/123</li>
+      <li>Find All :   GET      /thing    </li>
+      <li>Update   :   PUT      /thing/123</li>
+      <li>Create   :   POST     /thing    </li>
+      <li>Delete   :   DELETE   /thing/123</li>
+    </ul>
+    <code>thing</code> can be replaced with any word exept <code>allrest</code> which is used to list and edit objects in a web interface. (This can be changed in <code>config/routes.rb</code>.)<br/>
+    <code>id</code> of object is forced by the server strting by 1 increasing (2, 3, 4...) for each object name and is inserted into the object.
+    
+  </body>
+</html>
